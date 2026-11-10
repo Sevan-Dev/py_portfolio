@@ -49,14 +49,13 @@ PROJECTS = [
         "link": "",
     },
     {
-        "id": "luvas-web-services",
-        "title": "Services Web & SEO (Luvas Freelance)",
+        "id": "raise-web-services",
+        "title": "Services Web & SEO (Raise Freelance)",
         "description": (
             "Création de sites web professionnels sur-mesure pour des clients"
-            " indépendants, optimisation du référencement naturel (SEO) et"
-            " intégration d'outils de gestion."
+            " indépendants et optimisation du référencement naturel (SEO)"
         ),
-        "tags": ["Web", "SEO", "Freelance", "CMS"],
+        "tags": ["Web", "SEO", "Freelance", "React", "Next.js", "Frontend", "JavaScript"],
         "year": 2024,
         "link": "",
     },

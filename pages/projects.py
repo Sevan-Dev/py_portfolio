@@ -54,4 +54,5 @@ for i, project in enumerate(filtered_list):
             st.write(project["description"])
             tags_str = ", ".join(project["tags"])
             st.caption(f"Tags : {tags_str} | Année : {project['year']}")
-            st.link_button("See the code", project["link"])
+            if project.get("link"):
+                st.link_button("See the code", project["link"])
