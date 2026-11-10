@@ -62,11 +62,11 @@ PROJECTS = [
 ]
 
 TIMELINE = [
-(
-        "2026 "
-        "Master Health IA — Université Bourgogne Europe (UBE), Dijon",    
-        ),
-(
+    (
+        "2026",
+        "Master Health IA — Université Bourgogne Europe (UBE), Dijon",
+    ),
+    (
         "Fév. 2026 - Juin 2026",
         "Stage R&D chez Paul Wurth / TMT (Luxembourg) — Système de détection"
         " d'anomalies sur haut-fourneau via IA non supervisée et Dash.",
