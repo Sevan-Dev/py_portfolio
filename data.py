@@ -16,15 +16,62 @@ SKILLS = {
     "Allemand": 40,
 }
 PROJECTS = [
-{"title": "Tic-tac-toe with tkinter", "description": "A graphical game with a computer opponent.",
-"tags": ["Python", "GUI", "Test"], "year": 2026, "link": "https://github.com/Sevan-Dev"},
-{"title": "Tic-tac-toe with tkinter", "description": "A graphical game with a computer opponent.",
-"tags": ["Python", "GUI"], "year": 2026, "link": "https://github.com/Sevan-Dev"},
-{"title": "Tic-tac-toe with tkinter", "description": "A graphical game with a computer opponent.",
-"tags": ["Python", "GUI"], "year": 2026, "link": "https://github.com/Sevan-Dev"},
+{
+        "id": "blast-furnace-ai",
+        "title": "Détection d'anomalies sur Haut-Fourneau (Paul Wurth / TMT)",
+        "description": (
+            "Pipeline complet de Data Science & Machine Learning croisant les"
+            " capteurs thermiques 2D (Soma) et 3D (Topscan). Algorithme"
+            " Isolation Forest non supervisé, explicabilité SHAP et dashboard"
+            " interactif Dash sous architecture hexagonale."
+        ),
+        "tags": [
+            "Python",
+            "Machine Learning",
+            "Isolation Forest",
+            "SHAP",
+            "Dash",
+            "SQL Server",
+        ],
+        "year": 2026,
+        "link": "", 
+    },
+    {
+        "id": "eagle-intuition-refit",
+        "title": "Refonte Web Multi-sites (Eagle Intuition Portugal)",
+        "description": (
+            "Refonte complète de deux sites web d'entreprise pour moderniser"
+            " l'interface utilisateur (UI/UX) et optimiser les performances de"
+            " chargement."
+        ),
+        "tags": ["React", "Next.js", "Frontend", "JavaScript"],
+        "year": 2025,
+        "link": "",
+    },
+    {
+        "id": "luvas-web-services",
+        "title": "Services Web & SEO (Luvas Freelance)",
+        "description": (
+            "Création de sites web professionnels sur-mesure pour des clients"
+            " indépendants, optimisation du référencement naturel (SEO) et"
+            " intégration d'outils de gestion."
+        ),
+        "tags": ["Web", "SEO", "Freelance", "CMS"],
+        "year": 2024,
+        "link": "",
+    },
 ]
 
 TIMELINE = [
+(
+        "2026 "
+        "Master Health IA — Université Bourgogne Europe (UBE), Dijon"    
+        ),
+(
+        "Fév. 2026 - Juin 2026",
+        "Stage R&D chez Paul Wurth / TMT (Luxembourg) — Système de détection"
+        " d'anomalies sur haut-fourneau via IA non supervisée et Dash.",
+    ),
     (
         "2025",
         "Stage au Portugal — Eagle Intuition : refonte de deux sites web avec React et Next.js pour améliorer leur design et leurs fonctionnalités.",
@@ -35,7 +82,7 @@ TIMELINE = [
     ),
     (
         "2024",
-        "Auto-entrepreneur — Luvas : conception et personnalisation de sites web pour divers clients, intégration de thèmes/plugins et optimisation SEO.",
+        "Auto-entrepreneur — Raiise : conception et personnalisation de sites web pour divers clients.",
     ),
     ("2023 - 2025", "BUT Informatique — IUT de Metz"),
     ("2020 - 2023", "Baccalauréat STI2D — Lycée de La Communication"),
