@@ -64,7 +64,7 @@ PROJECTS = [
 TIMELINE = [
 (
         "2026 "
-        "Master Health IA — Université Bourgogne Europe (UBE), Dijon"    
+        "Master Health IA — Université Bourgogne Europe (UBE), Dijon",    
         ),
 (
         "Fév. 2026 - Juin 2026",
