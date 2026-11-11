@@ -1,5 +1,5 @@
 PROFILE = {
-"name": "Sevan Roth", "title": "M1 student in Computer Science",
+"name": "Sevan Roth", "title": "M1 student in Health AI",
 "city": "Dijon, France", "email": "rothsevan@gmail.com",
 "github": "https://github.com/Sevan-Dev",
 "linkedin": "https://www.linkedin.com/in/sevan-roth-site-web/",
@@ -32,7 +32,7 @@ TEXTS = {
             "labs": "Labs",
         },
         "profile": {
-            "title": "M1 student in Computer Science",
+            "title": "M1 student in Health AI",
             "about": (
                 "I’m a first-year Master’s student in Computer Science. What I enjoy most "
                 "is taking raw data and turning it into something people can actually use, "
@@ -107,9 +107,9 @@ TEXTS = {
             "labs": "Laboratoire",
         },
         "profile": {
-            "title": "Étudiant en Master 1 d'Informatique",
+            "title": "Étudiant en Master 1 Santé IA",
             "about": (
-                "Je suis en Master 1 d’Informatique. Ce qui me plaît dans ce domaine, "
+                "Je suis en Master 1 Santé IA. Ce qui me plaît dans ce domaine, "
                 "c’est de partir de données brutes et d’en tirer quelque chose qui sert "
                 "vraiment : un outil, une application. J’ai pas mal codé en Python et en "
                 "web (front comme back), et je me suis spécialisé en data science et "
@@ -174,7 +174,7 @@ TEXTS = {
 DATA = {
     "en": {
         "profile": {
-            "title": "M1 student in Computer Science",
+            "title": "M1 student in Health AI",
             "about": (
                 "I’m a first-year Master’s student in Computer Science. What I enjoy most "
                 "is taking raw data and turning it into something people can actually use, "
@@ -262,9 +262,9 @@ DATA = {
     },
     "fr": {
         "profile": {
-            "title": "Étudiant en Master 1 d'Informatique",
+            "title": "Étudiant en Master 1 Santé IA",
             "about": (
-                "Je suis en Master 1 d’Informatique. Ce qui me plaît dans ce domaine, "
+                "Je suis en Master 1 Santé IA. Ce qui me plaît dans ce domaine, "
                 "c’est de partir de données brutes et d’en tirer quelque chose qui sert "
                 "vraiment : un outil, une application. J’ai pas mal codé en Python et en "
                 "web (front comme back), et je me suis spécialisé en data science et "

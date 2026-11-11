@@ -19,3 +19,17 @@ Il contient une version française et une version anglaise (sélection de la lan
 
 ### 1. Naviguer dans le dossier du projet
 Ouvrez votre terminal et rendez-cous dans le dossier py_portfolio
+
+### 2. Installer les dépendances
+Installez l'ensemble des bibliothèques nécessaires au projet avec la commande :
+
+```bash
+python -m pip install -r requirements.txt
+```
+### 3. Lancer l'application
+Exécutez le script principal via Streamlit :
+
+```bash
+streamlit run app.py
+```
+Le site s'ouvrira automatiquement dans votre navigateur par défaut à l'adresse http://localhost:8501
