@@ -59,6 +59,10 @@ cols = st.columns(2)
 for i, project in enumerate(filtered_list):
     with cols[i % 2]:
         with st.container(border=True):
+            if project.get("image"):
+                st.image(
+                    project["image"], use_container_width=True
+            ) 
             st.subheader(project["title"])
             st.write(project["description"])
             tags_str = ", ".join(project["tags"])

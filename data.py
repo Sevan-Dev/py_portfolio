@@ -211,6 +211,7 @@ DATA = {
                 "tags": ["Python", "Machine Learning", "Isolation Forest", "SHAP", "Dash", "SQL Server"],
                 "year": 2026,
                 "link": "",
+                "image": "assets/imgs/TMT.png"
             },
             {
                 "id": "eagle-intuition-refit",
@@ -222,6 +223,7 @@ DATA = {
                 "tags": ["React", "Next.js", "Frontend", "JavaScript"],
                 "year": 2025,
                 "link": "",
+                "image": "assets/imgs/eagle_intuition.png"
             },
             {
                 "id": "raise-web-services",
@@ -232,7 +234,8 @@ DATA = {
                 ),
                 "tags": ["Web", "SEO", "Freelance", "React", "Next.js", "Frontend", "JavaScript"],
                 "year": 2024,
-                "link": "",
+                "link": "https://raiise.fr/",
+                "image": "assets/imgs/raiise.png"
             },
         ],
         "timeline": [
