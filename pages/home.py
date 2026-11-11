@@ -1,40 +1,42 @@
 import streamlit as st
 
-from data import PROFILE, PROJECTS, SKILLS
+from data import PROFILE, TEXTS, DATA
 
+texts = TEXTS[st.session_state.get("language", "en")]
+data = DATA[st.session_state.get("language", "en")]
+profile = data["profile"]
+projects = data["projects"]
+skills = data["skills"]
 
-st.title(f"Hi, I'm {PROFILE['name']}")
-st.subheader(PROFILE["title"])
+st.title(texts["home"]["greeting"].format(name=PROFILE["name"]))
+st.subheader(profile["title"])
 left, right = st.columns([1, 2])
 with left:
     st.image("assets/photo.png", width=220)
 with right:
-    st.write(PROFILE["about"])
+    st.write(profile["about"])
 #TODO: city and e-mail, then a button to download assets/cv.pdf
 
 with open("assets/cv.pdf", "rb") as f:
-    st.download_button("Download my CV", f, file_name="cv.pdf")
+    st.download_button(texts["home"]["download_cv"], f, file_name="cv.pdf")
 
 st.divider()
 
-st.metric(label="Nombre de projets", value=len(PROJECTS))
-st.metric(label="Nombre de skills", value=len(SKILLS))
+st.metric(label=texts["home"]["project_count"], value=len(projects))
+st.metric(label=texts["home"]["skill_count"], value=len(skills))
 
 
 
-best_skill = max(SKILLS, key=SKILLS.get)
+best_skill = max(skills, key=skills.get)
 
 
 col_metric, col_valeur = st.columns([3, 1])
 
 with col_metric:
-    st.metric(label="Meilleure compétence", value=best_skill)
+    st.metric(label=texts["home"]["best_skill"], value=best_skill)
 
 with col_valeur:
-    st.metric(label="Niveau", value=(SKILLS[best_skill]))
+    st.metric(label=texts["home"]["level"], value=(skills[best_skill]))
 
-
-st.progress(SKILLS.get(best_skill) / 100) 
-
-
+st.progress(skills.get(best_skill) / 100)
 

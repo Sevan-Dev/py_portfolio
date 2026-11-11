@@ -3,20 +3,23 @@ import streamlit as st
 import csv
 from datetime import datetime
 import os
+from data import TEXTS
 
-def check(name, email, message):
+texts = TEXTS[st.session_state.get("language", "en")]
+
+def check(name, email, message, contact_texts):
     name = name.strip()
     email = email.strip()
     message = message.strip()
 
     if not name:
-        return "Le nom ne peut pas être vide."
+        return contact_texts["empty_name"]
 
     email_regle = r"^[\w\.-]+@[\w\.-]+\.\w+$"
     if not re.match(email_regle, email):
-        return "L'adresse email n'est pas valide."
+        return contact_texts["invalid_email"]
     if len(message) < 10:
-        return "Le message doit contenir au moins 10 caractères."
+        return contact_texts["short_message"]
     return ""
 
 def save(name, email, message):
@@ -30,18 +33,18 @@ def save(name, email, message):
         now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         writer.writerow([now, name, email, message])
 
-st.subheader("Me contacter")
+st.subheader(texts["contact"]["title"])
 
 with st.form("contact_form"):
-    name = st.text_input("Nom")
-    email = st.text_input("Email")
-    message = st.text_area("Message")
-    submited = st.form_submit_button("Envoyer")
+    name = st.text_input(texts["contact"]["name"])
+    email = st.text_input(texts["contact"]["email"])
+    message = st.text_area(texts["contact"]["message"])
+    submited = st.form_submit_button(texts["contact"]["send"])
 
 if submited:
-    erreur = check(name, email, message)
+    erreur = check(name, email, message, texts["contact"])
     if erreur == "":
         save(name, email, message)
-        st.success("Merci ! Votre message a bien été envoyé.")
+        st.success(texts["contact"]["success"])
     else:
         st.error(erreur)

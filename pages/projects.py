@@ -1,5 +1,8 @@
 import streamlit as st
-from data import PROJECTS
+from data import DATA, TEXTS
+
+texts = TEXTS[st.session_state.get("language", "en")]
+projects = DATA[st.session_state.get("language", "en")]["projects"]
 
 
 def all_tags(projects):
@@ -32,18 +35,18 @@ def filter_projects(projects, choosen):
 
 
 
-tags = all_tags(PROJECTS)
-choosen =  st.multiselect("Filtre par tag", options=tags)
-filtered_list = filter_projects(PROJECTS, choosen)
+tags = all_tags(projects)
+choosen = st.multiselect(texts["projects"]["tag_filter"], options=tags)
+filtered_list = filter_projects(projects, choosen)
 
 sort_order = st.radio(
-    "Tri par année", 
-    options=["Plus récents", "Plus anciens"]
+    texts["projects"]["sort_year"],
+    options=[texts["projects"]["newest"], texts["projects"]["oldest"]]
 )
 
 
-s = "s" if len(filtered_list) > 1 else ""
-st.write(f"**{len(filtered_list)}** projet{s} trouvé{s}")
+result_text = texts["projects"]["found_many"] if len(filtered_list) > 1 else texts["projects"]["found_one"]
+st.write(f"**{len(filtered_list)}** {result_text}")
 
 cols = st.columns(2)
 
@@ -53,6 +56,9 @@ for i, project in enumerate(filtered_list):
             st.subheader(project["title"])
             st.write(project["description"])
             tags_str = ", ".join(project["tags"])
-            st.caption(f"Tags : {tags_str} | Année : {project['year']}")
+            st.caption(
+                f"{texts['projects']['tags']} : {tags_str} | "
+                f"{texts['projects']['year']} : {project['year']}"
+            )
             if project.get("link"):
-                st.link_button("See the code", project["link"])
+                st.link_button(texts["projects"]["see_code"], project["link"])

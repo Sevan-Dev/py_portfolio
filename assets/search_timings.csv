@@ -1,0 +1,15 @@
+benchmark,size,algorithm,average_time_seconds
+search,1000,list,0.00003368
+search,1000,numpy,0.00011208
+search,1000,bst,0.00000192
+search,10000,list,0.00024642
+search,10000,numpy,0.00002281
+search,10000,bst,0.00000647
+search,100000,list,0.00273328
+search,100000,numpy,0.00011185
+search,100000,bst,0.00000556
+search,1000000,list,0.02042054
+search,1000000,numpy,0.00090171
+search,1000000,bst,0.00000887
+bst_shape_comparison,2000,random_bst,0.00000182
+bst_shape_comparison,2000,sorted_bst,0.00014300
