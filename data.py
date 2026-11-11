@@ -222,7 +222,7 @@ DATA = {
                 ),
                 "tags": ["React", "Next.js", "Frontend", "JavaScript"],
                 "year": 2025,
-                "link": "",
+                "link": "https://eagle-intuition-international.vercel.app/",
                 "image": "assets/imgs/eagle_intuition.png"
             },
             {
