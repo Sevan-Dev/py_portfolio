@@ -7,6 +7,8 @@ data = DATA[st.session_state.get("language", "en")]
 skills = data["skills"]
 timeline = data["timeline"]
 
+st.title(texts["nav"]["skills"])
+
 tab1, tab2 = st.tabs([texts["skills"]["tab"], texts["skills"]["education_tab"]])
 with tab1:
     st.metric(label=texts["skills"]["skill_count"], value=len(skills))

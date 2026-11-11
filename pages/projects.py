@@ -4,6 +4,8 @@ from data import DATA, TEXTS
 texts = TEXTS[st.session_state.get("language", "en")]
 projects = DATA[st.session_state.get("language", "en")]["projects"]
 
+st.title(texts["nav"]["projects"])
+
 
 def all_tags(projects):
     tags = set()
@@ -44,6 +46,10 @@ sort_order = st.radio(
     options=[texts["projects"]["newest"], texts["projects"]["oldest"]]
 )
 
+filtered_list.sort(
+    key=lambda p: int(p["year"]),
+    reverse=(sort_order == texts["projects"]["newest"]),
+)
 
 result_text = texts["projects"]["found_many"] if len(filtered_list) > 1 else texts["projects"]["found_one"]
 st.write(f"**{len(filtered_list)}** {result_text}")

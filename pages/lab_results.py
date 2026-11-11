@@ -4,6 +4,8 @@ from data import TEXTS
 
 texts = TEXTS[st.session_state.get("language", "en")]
 
+st.title(texts["nav"]["labs"])
+
 @st.cache_data #on lit et stocke en mémoire le csv la premiere fois, puis on utlise la version en mémoire pour éviter de le lire a partir de disque a chauqe fois
 def load_datas():
 
