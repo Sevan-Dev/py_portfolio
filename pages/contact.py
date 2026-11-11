@@ -24,7 +24,7 @@ def check(name, email, message, contact_texts):
         return contact_texts["short_message"]
     return ""
 
-"""On utilise le mode "a" (append) parce qu'il permet d'ajouter les nouveaux messages directement à la fin du fichier CSV sans toucher à ceux qui sont déjà enregistrés. Si on utilisait le mode "w" (write), le fichier serait complètement réinitialisé et écrasé à chaque fois qu'un visiteur envoie un nouveau formulaire, et on perdrait tous les anciens messages."""
+#On utilise le mode "a" (append) parce qu'il permet d'ajouter les nouveaux messages directement à la fin du fichier CSV sans toucher à ceux qui sont déjà enregistrés. Si on utilisait le mode "w" (write), le fichier serait complètement réinitialisé et écrasé à chaque fois qu'un visiteur envoie un nouveau formulaire, et on perdrait tous les anciens messages.
 
 def save(name, email, message):
     file_existe = os.path.exists("messages.csv")

@@ -12,9 +12,9 @@ st.title(texts["home"]["greeting"].format(name=PROFILE["name"]))
 st.subheader(profile["title"])
 left, right = st.columns([1, 2])
 
-"""
-Sur un écran mobile, Streamlit gère automatiquement le responsive design : au lieu d'afficher les colonnes (st.columns) côte à côte ce qui les rendrait beaucoup trop étroites et illisibles, l'interface les réorganise et les empile verticalement les unes sous les autres pour s'adapter à la largeur de l'écran.
-"""
+
+#Sur un écran mobile, Streamlit gère automatiquement le responsive design : au lieu d'afficher les colonnes (st.columns) côte à côte ce qui les rendrait beaucoup trop étroites et illisibles, l'interface les réorganise et les empile verticalement les unes sous les autres pour s'adapter à la largeur de l'écran.
+
 with left:
     st.image("assets/photo.png", width=220)
 with right:
