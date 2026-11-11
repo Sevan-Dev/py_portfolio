@@ -4,7 +4,7 @@ PROFILE = {
 "github": "https://github.com/Sevan-Dev",
 "linkedin": "https://www.linkedin.com/in/sevan-roth-site-web/",
 "about": (
-    "I’m a first-year Master’s student in Computer Science. What I enjoy most "
+    "I’m a first-year Master’s student in Health AI. What I enjoy most "
     "is taking raw data and turning it into something people can actually use, "
     "whether that’s a tool or an app. I’ve worked a lot with Python and web "
     "development (front and back end), and I’ve built up experience in data "
@@ -34,7 +34,7 @@ TEXTS = {
         "profile": {
             "title": "M1 student in Health AI",
             "about": (
-                "I’m a first-year Master’s student in Computer Science. What I enjoy most "
+                "I’m a first-year Master’s student in Health AI. What I enjoy most "
                 "is taking raw data and turning it into something people can actually use, "
                 "whether that’s a tool or an app. I’ve worked a lot with Python and web "
                 "development (front and back end), and I’ve built up experience in data "
@@ -176,7 +176,7 @@ DATA = {
         "profile": {
             "title": "M1 student in Health AI",
             "about": (
-                "I’m a first-year Master’s student in Computer Science. What I enjoy most "
+                "I’m a first-year Master’s student in Health AI. What I enjoy most "
                 "is taking raw data and turning it into something people can actually use, "
                 "whether that’s a tool or an app. I’ve worked a lot with Python and web "
                 "development (front and back end), and I’ve built up experience in data "
